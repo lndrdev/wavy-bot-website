@@ -5,7 +5,6 @@ import { Music, Headphones, Mic, Zap } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function Component() {
-  // Replace this with your actual OAuth2 URL
   const discordOAuthURL = "https://discord.com/oauth2/authorize?client_id=1292149683090751569"
 
   return (
@@ -54,39 +53,39 @@ export default function Component() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 dark:text-white">Features</h2>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               <Card className="dark:bg-gray-800">
-                <CardHeader>
+                <CardHeader className="flex flex-col items-center">
                   <Music className="w-10 h-10 text-purple-600 mb-2 dark:text-purple-400" />
-                  <CardTitle className="dark:text-white">High-Quality Streaming</CardTitle>
+                  <CardTitle className="dark:text-white text-center">High-Quality Streaming</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription className="dark:text-gray-300">Enjoy crystal-clear audio from various sources including YouTube, Spotify, and SoundCloud.</CardDescription>
+                <CardContent className="flex flex-col items-center">
+                  <CardDescription className="dark:text-gray-300 text-center">Enjoy crystal-clear audio from various sources including YouTube, Spotify, and SoundCloud.</CardDescription>
                 </CardContent>
               </Card>
               <Card className="dark:bg-gray-800">
-                <CardHeader>
+                <CardHeader className="flex flex-col items-center">
                   <Headphones className="w-10 h-10 text-purple-600 mb-2 dark:text-purple-400" />
-                  <CardTitle className="dark:text-white">Intuitive Controls</CardTitle>
+                  <CardTitle className="dark:text-white text-center">Intuitive Controls</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription className="dark:text-gray-300">Easy-to-use commands for play, pause, skip, and queue management.</CardDescription>
+                <CardContent className="flex flex-col items-center">
+                  <CardDescription className="dark:text-gray-300 text-center">Easy-to-use commands for play, pause, skip, and queue management.</CardDescription>
                 </CardContent>
               </Card>
               <Card className="dark:bg-gray-800">
-                <CardHeader>
+                <CardHeader className="flex flex-col items-center">
                   <Mic className="w-10 h-10 text-purple-600 mb-2 dark:text-purple-400" />
-                  <CardTitle className="dark:text-white">Lyrics Integration</CardTitle>
+                  <CardTitle className="dark:text-white text-center">Lyrics Integration</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription className="dark:text-gray-300">Display synchronized lyrics for sing-alongs and karaoke nights.</CardDescription>
+                <CardContent className="flex flex-col items-center">
+                  <CardDescription className="dark:text-gray-300 text-center">Display synchronized lyrics for sing-alongs and karaoke nights.</CardDescription>
                 </CardContent>
               </Card>
               <Card className="dark:bg-gray-800">
-                <CardHeader>
+                <CardHeader className="flex flex-col items-center">
                   <Zap className="w-10 h-10 text-purple-600 mb-2 dark:text-purple-400" />
-                  <CardTitle className="dark:text-white">24/7 Uptime</CardTitle>
+                  <CardTitle className="dark:text-white text-center">24/7 Uptime</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription className="dark:text-gray-300">Reliable performance with minimal downtime, ensuring your music never stops.</CardDescription>
+                <CardContent className="flex flex-col items-center">
+                  <CardDescription className="dark:text-gray-300 text-center">Reliable performance with minimal downtime, ensuring your music never stops.</CardDescription>
                 </CardContent>
               </Card>
             </div>
