@@ -1,15 +1,12 @@
+'use client'
+
 import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Music, Headphones, Mic, Zap } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
-import ClientComponent from './ClientComponent'
 
-export default function Page() {
-  return <ClientComponent />
-}
-
-export default function Component() {
+export default function ClientComponent() {
   const discordOAuthURL = "https://discord.com/oauth2/authorize?client_id=1292149683090751569"
 
   return (
