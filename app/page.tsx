@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Music, Headphones, Mic, Zap } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
-import { WaveDivider } from "@/components/WaveDivider"
 
 export default function Page() {
   const discordOAuthURL = "https://discord.com/oauth2/authorize?client_id=1292149683090751569"
@@ -49,7 +48,6 @@ export default function Page() {
             </div>
           </div>
         </section>
-        <WaveDivider />
         <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-gray-900">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 dark:text-white">Features</h2>
@@ -93,7 +91,6 @@ export default function Page() {
             </div>
           </div>
         </section>
-        <WaveDivider isReversed />
         <section id="add-bot" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-indigo-700 to-purple-600 dark:from-gray-800 dark:to-gray-900">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
@@ -113,7 +110,7 @@ export default function Page() {
       <footer className="py-6 w-full shrink-0 px-4 md:px-6 border-t bg-white dark:bg-gray-900 dark:border-gray-700">
         <div className="container flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-gray-500 dark:text-gray-400">© 2024 Wavy Bot. All rights reserved.</p>
-          <nav className="flex gap-4 sm:gap-6">
+          <nav className="flex gap-4 sm:gap-6"></nav>
             <a className="text-xs hover:underline underline-offset-4 text-gray-500 dark:text-gray-400" href="https://legal.wavybot.me/">
               Legal Information
             </a>
