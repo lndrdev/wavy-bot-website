@@ -10,9 +10,11 @@ export default function Component() {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-purple-600 to-indigo-700 dark:from-gray-900 dark:to-gray-800 relative overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="rgba(255,255,255,0.1)" fillOpacity="1" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
+        <div className="wave-container">
+          <div className="wave"></div>
+          <div className="wave"></div>
+          <div className="wave"></div>
+        </div>
       </div>
       <header className="px-4 lg:px-6 h-16 flex items-center justify-between z-10">
         <div className="flex items-center">
@@ -54,15 +56,10 @@ export default function Component() {
           </div>
         </section>
         <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-gray-900 relative overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path fill="rgba(128,90,213,0.1)" fillOpacity="1" d="M0,160L48,170.7C96,181,192,203,288,192C384,181,480,139,576,144C672,149,768,203,864,224C960,245,1056,235,1152,213.3C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-            </svg>
-          </div>
           <div className="container px-4 md:px-6 relative z-10">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 dark:text-white">Features</h2>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              <Card className="dark:bg-gray-800 backdrop-blur-sm bg-white/30 dark:bg-gray-800/30">
+              <Card className="dark:bg-gray-800 backdrop-blur-sm bg-white/30 dark:bg-gray-800/30 transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <CardHeader className="flex flex-col items-center">
                   <Music className="w-10 h-10 text-purple-600 mb-2 dark:text-purple-400" />
                   <CardTitle className="dark:text-white text-center">High-Quality Streaming</CardTitle>
@@ -71,7 +68,7 @@ export default function Component() {
                   <CardDescription className="dark:text-gray-300 text-center">Enjoy crystal-clear audio from various sources including YouTube, Spotify, and SoundCloud.</CardDescription>
                 </CardContent>
               </Card>
-              <Card className="dark:bg-gray-800 backdrop-blur-sm bg-white/30 dark:bg-gray-800/30">
+              <Card className="dark:bg-gray-800 backdrop-blur-sm bg-white/30 dark:bg-gray-800/30 transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <CardHeader className="flex flex-col items-center">
                   <Headphones className="w-10 h-10 text-purple-600 mb-2 dark:text-purple-400" />
                   <CardTitle className="dark:text-white text-center">Intuitive Controls</CardTitle>
@@ -80,7 +77,7 @@ export default function Component() {
                   <CardDescription className="dark:text-gray-300 text-center">Easy-to-use commands for play, pause, skip, and queue management.</CardDescription>
                 </CardContent>
               </Card>
-              <Card className="dark:bg-gray-800 backdrop-blur-sm bg-white/30 dark:bg-gray-800/30">
+              <Card className="dark:bg-gray-800 backdrop-blur-sm bg-white/30 dark:bg-gray-800/30 transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <CardHeader className="flex flex-col items-center">
                   <Mic className="w-10 h-10 text-purple-600 mb-2 dark:text-purple-400" />
                   <CardTitle className="dark:text-white text-center">Lyrics Integration</CardTitle>
@@ -89,7 +86,7 @@ export default function Component() {
                   <CardDescription className="dark:text-gray-300 text-center">Display synchronized lyrics for sing-alongs and karaoke nights.</CardDescription>
                 </CardContent>
               </Card>
-              <Card className="dark:bg-gray-800 backdrop-blur-sm bg-white/30 dark:bg-gray-800/30">
+              <Card className="dark:bg-gray-800 backdrop-blur-sm bg-white/30 dark:bg-gray-800/30 transition-all duration-300 hover:scale-105 hover:shadow-lg">
                 <CardHeader className="flex flex-col items-center">
                   <Zap className="w-10 h-10 text-purple-600 mb-2 dark:text-purple-400" />
                   <CardTitle className="dark:text-white text-center">24/7 Uptime</CardTitle>
@@ -102,11 +99,6 @@ export default function Component() {
           </div>
         </section>
         <section id="add-bot" className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800 relative overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-              <path fill="rgba(128,90,213,0.1)" fillOpacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-            </svg>
-          </div>
           <div className="container px-4 md:px-6 relative z-10">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
@@ -130,6 +122,41 @@ export default function Component() {
           </a>
         </nav>
       </footer>
+      <style jsx>{`
+        .wave-container {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+        }
+        .wave {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 100px;
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23ffffff22'/%3E%3C/svg%3E");
+          animation: wave 10s linear infinite;
+        }
+        .wave:nth-of-type(2) {
+          bottom: 0;
+          animation: wave 7s linear reverse infinite;
+          opacity: 0.5;
+        }
+        .wave:nth-of-type(3) {
+          bottom: 0;
+          animation: wave 5s linear infinite;
+          opacity: 0.2;
+        }
+        @keyframes wave {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+      `}</style>
     </div>
   )
 }
